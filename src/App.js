@@ -15,6 +15,13 @@ function App() {
   const [name, setName] = useState("...");
   const [inputText, setInputText] = useState("");
 
+  function onClick() {
+    const prefix = "Hello, ";
+    const title = prefix + inputText;
+
+    setName(title);
+  }
+
   return (
     <Segment vertical>
       <Card centered>
@@ -34,7 +41,7 @@ function App() {
                 onChange={(e) => setInputText(e.target.value)}
               />
             </Form.Field>
-            <Button primary onClick={() => setName(inputText)}>
+            <Button primary onClick={onClick}>
               Go
             </Button>
           </Form>
