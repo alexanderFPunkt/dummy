@@ -15,8 +15,6 @@ function App() {
   const [name, setName] = useState("...");
   const [inputText, setInputText] = useState("");
 
-  const aebr = "AEBR";
-
   return (
     <Segment vertical>
       <Card centered>
