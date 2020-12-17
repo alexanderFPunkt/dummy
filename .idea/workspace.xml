@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79c482e5-e56a-439b-a6fb-e40f3895e883" name="Default Changelist" comment="refactor function example">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +77,14 @@
       <workItem from="1608199439347" duration="5569000" />
       <workItem from="1608208738267" duration="8176000" />
     </task>
+    <task id="LOCAL-00001" summary="refactor function example">
+      <created>1608222815830</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608222815830</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

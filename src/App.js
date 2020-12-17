@@ -1,15 +1,6 @@
-import React, { useState } from "react";
-import {
-  Header,
-  Image,
-  Container,
-  Card,
-  Input,
-  Button,
-  Grid,
-  Form,
-  Segment,
-} from "semantic-ui-react";
+import React, {useState} from "react";
+import {Button, Card, Form, Input, Segment} from "semantic-ui-react";
+import {Header} from "./Header";
 
 function App() {
   const [name, setName] = useState("...");
@@ -25,14 +16,7 @@ function App() {
   return (
     <Segment vertical>
       <Card centered>
-        <Card.Content>
-          <Image
-            src="https://react.semantic-ui.com/images/avatar/large/matthew.png"
-            floated="left"
-            size="small"
-          />
-          <Card.Header as="h2">{name}</Card.Header>
-        </Card.Content>
+        <Header name={name}/>
         <Card.Content>
           <Form>
             <Form.Field>
