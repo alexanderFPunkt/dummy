@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import {
+  Header,
+  Image,
+  Container,
+  Card,
+  Input,
+  Button,
+  Grid,
+  Form,
+  Segment,
+} from "semantic-ui-react";
 
 function App() {
+  const [name, setName] = useState("...");
+  const [inputText, setInputText] = useState("");
+
+  const aebr = "AEBR";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Segment vertical>
+      <Card centered>
+        <Card.Content>
+          <Image
+            src="https://react.semantic-ui.com/images/avatar/large/matthew.png"
+            floated="left"
+            size="small"
+          />
+          <Card.Header as="h2">{name}</Card.Header>
+        </Card.Content>
+        <Card.Content>
+          <Form>
+            <Form.Field>
+              <Input
+                placeholder="..."
+                onChange={(e) => setInputText(e.target.value)}
+              />
+            </Form.Field>
+            <Button primary onClick={() => setName(inputText)}>
+              Go
+            </Button>
+          </Form>
+        </Card.Content>
+      </Card>
+    </Segment>
   );
 }
 
